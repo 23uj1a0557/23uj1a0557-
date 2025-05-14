@@ -1,0 +1,73 @@
+Here's a simple HTML and CSS example for a horizontal navigation bar with "Home," "About," "Services," and "Contact" links. The active link is highlighted using a class.
+
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Bar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
+
+CSS (styles.css):
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #575757;
+}
+
+.nav-links a.active {
+  background-color: #04AA6D;
+}
+
+How it works:
+
+The nav bar is styled to be horizontal using flex.
+
+The active class highlights the current page.
+
+On hover, links change background for interactivity.
+
+
+Let me know if you'd like it to be responsive or include dropdowns.
